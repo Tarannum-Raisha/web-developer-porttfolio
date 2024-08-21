@@ -167,7 +167,7 @@ border-radius: 5px;
     
    } 
    footer{
-    padding: 130px 230px ;
+     padding: 130px 230px ;
     /* margin: 200px; */
     
    }
@@ -199,3 +199,43 @@ border-radius: 5px;
     margin-bottom: 24px;
     border: none;
    }
+     .hide{
+        display: none;
+    } 
+    @media screen and (max-width:576px) {
+        .skills-container{
+            flex-direction: column;
+        }
+        .resume-description-title{
+            flex-direction: column;
+            background-color: rgba(255, 182, 193, 0.383);
+        }
+        .footer{
+            flex-direction: column;
+            align-items: flex-end;
+        
+        }
+        
+        footer{
+            padding: 20px;
+        }
+        footer input[type="text"], footer input[type="email"], footer textarea
+        {
+            width: calc(100% - 40px);
+        }
+        /* footer textarea{
+            width: calc(100% - 40px);
+        } */
+        .about{
+            padding: 5px;
+            text-align: start;
+        }
+    
+    .about-items{
+        flex-direction: column;
+         flex-wrap: wrap; 
+         align-content: center; 
+    }
+    }
+    
+    
